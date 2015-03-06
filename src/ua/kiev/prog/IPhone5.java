@@ -17,11 +17,13 @@ public class IPhone5 extends IPhone {
 		System.out.println("IPhone5 class is sending sms " + message + " to " + number);	
 	}*/
 
+    @Override
     public void call(String number) {
         System.out.println("IPhone5 is calling " + number);
         super.call(number);
     }
 
+    @Override
     public void sendSMS(String number, String message) {
         super.sendSMS(number,message);
         System.out.println("IPhone5 is sending sms " + message + " to " + number);

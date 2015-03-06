@@ -14,11 +14,13 @@ public class Sumsung4 extends Phone {
         return sayHello;
     }
 
+    @Override
     public void call(String number) {
         super.call(number);
         System.out.println("Sumsung4 is calling " + number);
     }
 
+    @Override
     public void sendSMS(String number, String message) {
         super.sendSMS(number,message);
         System.out.println("Sumsung4 is sending sms " + message + " to " + number);
